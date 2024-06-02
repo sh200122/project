@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>信息完善</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 15%;
+                background-color: #f1f1f1;
+                position: fixed;
+                height: 100%;
+                overflow: auto;
+            }
+
+             li a {
+                display: block;
+                color: #000;
+                padding: 15px 16px;
+                text-decoration: none;
+            }
+
+            li a.active {
+                background-color: #4CAF50;
+                color: white;
+            }
+            li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+            body{
+                margin: 0;
+                background-image:url(../static/image/2.jpeg);
+                background-size:100% 100%;
+                background-attachment: fixed;
+                background-repeat:no-repeat;
+            }
+            td
+            {
+                padding:10px;
+            }
+            p{
+                font-size: 18px;
+            }
+            #progressBar {
+                position: fixed;
+                bottom: 555px;
+                width: 100%;
+                background-color: #ddd;
+            }
+
+            #progress {
+                width: 0%;
+                height: 30px;
+                background-color: #4caf50;
+                text-align: center;
+                line-height: 30px;
+                color: white;
+            }
+            #content,info{
+                margin-top: 30px;
+            }
+        </style>
+        <link href="../static/css/message_ws.css">
+    </head>
+    <body>
+    <form action="/message_ws" method="post">
+        <div id="content">
+                <ul style="text-align: center;background-color: rgb(220, 69, 69)">
+                <li><img src="../static/img/个人.png" style="margin:30px 0px 30px;width:40%;border-radius:50%;border:8px solid #df1111;"></li>
+                <li><a href="/user"><p style="font-size: 18px;color: white">主页</p></a></li>
+                <li><a href="#info"><p style="font-size: 18px;color: white">基本信息</p></a></li>
+                <li><a href="#resume"><p style="font-size: 18px;color: white">个人简介</p></a></li>
+            </ul>
+            <div id="info" style="margin-left:15%;padding:1px 16px;">
+                <h1 style="text-align: center;">基本信息</h1>
+                <table style="width: 90%;">
+                    <tr>
+                        <td>昵称：<input type="text" alt="请输入昵称" name="nc"></td>
+                        <td>性别：<input type="text" alt="请输入性别" name="xb"></td>
+                        <td>年龄：<input type="text" alt="请输入年龄" name="nl"></td>
+                    </tr>
+                    <tr>
+                        <td>家乡：<input type="text" alt="请输入家乡地址" name="jx"></td>
+                        <td>博客：<input type="text" alt="请输入博客" name="bk"></td>
+                        <td>邮箱：<input type="text" alt="请输入邮箱" name="yx"></td>
+                    </tr>
+                </table>
+                <img src="../img/background.jpg" style="margin-left: 200px;border-radius:50%;opacity: 0.1;">
+            </div>
+            <div id="resume" style="margin-left:15%;">
+                <br /> <br /> <br /> <br /> <br /><br /><br />
+                <h1 style="text-align: center;">个人简介</h1>
+                <div style="margin:0 15% 0 10% ">
+                    <p style="padding: 20px">
+                        <br />
+                    <div>个人简介：<textarea name="jj"></textarea></div>
+                    </p>
+                </div>
+            </div>
+            <br /> <br /> <br /> <br /> <br /> <br /><br/>
+
+                <a href="/message_ws"><input type="submit" value="保存" id="login"><input type="submit" value="保存" name="message_ws" class="message_ws" id="skill" style="margin-left: 700px;margin-bottom: 100px;font-size: 25px"></a>
+        </div>
+    </form>
+
+    </body>
+</html>

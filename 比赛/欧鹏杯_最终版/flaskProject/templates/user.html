@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>WX的主页</title>
+        <style>
+            body{
+                /*background-color:#11BBEE;*/
+                /*background-color: #33d3d3;*/
+                margin:0px;
+                background-image:url(/img/3.png);
+                background-size:100% 100%;
+                background-attachment: fixed;
+                /*background-image-z-index: -1;*/
+                background-repeat:no-repeat;
+            }
+            h1{
+                text-align:center;
+            }
+            div.a{
+                float:left;
+                position:relative;
+                left:50%;
+ 
+            }
+            div.b {
+ 
+                position: relative;
+                left: -50%;
+ 
+            }
+            .center {
+                margin: auto;
+                width: 50%;
+            }
+            p{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>{{ id }}</div>
+        <h1 style="text-align:center;margin-top:0;">我的主页</h1>
+ 
+        <div style="border-style: dashed;border-color: #00ccff;clear: both"></div>
+            <div class="a" style="margin-top: 25px">
+                <div class="b">
+                    <div style="text-align: center">
+                        <a href="/introdu"><img src="../static/img/我的简介.png" style="border-radius:50%;width: 100px;height: 100px;"></a>
+                        <a href="/message_ws"><img src="../static/img/信息完善.png" style="border-radius:50%;width: 100px;height: 100px;margin-left: 50px"></a>
+                        <a href="/shoucangjia"><img src="../static/img/我的收藏.png" style="border-radius:50%;width: 100px;height: 100px;margin-left: 50px"></a>
+                        <br />
+                        <p style="display:inline;margin-left: -8px;">个人简介</p>
+                        <p style="display:inline;margin-left: 70px;">信息完善</p>
+                        <p style="display:inline;margin-left: 82px;">收藏夹</p>
+                        <p style="color: green;margin-top:5%;font-size: 22px;">点击对应图片即可跳转</p>
+                        <table>
+                            <tr>
+                                <td style="width: 400px">
+                                    <p style="display:inline;margin-left:-100px;color: red;text-shadow:2px 0px #43798d;font-size: 25px">"梦想与现实之间的距离叫行动"</p>
+                                    <p style="font-family:'Times New Roman';margin-left:-100px;color: red;font-style:italic;text-shadow:2px 0px #43798d;font-size: 25px">"The distance between a dream and a reality is called action"</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 400px">
+                                    <p style="display:inline;color: blue;margin-left:-500px;text-shadow:2px 0px #43798d;font-size: 25px">"减少期待，调整心态"</p>
+                                    <p style="font-family:'Times New Roman';margin-left:-500px;color: blue;font-style:italic;text-shadow:2px 0px #43798d;font-size: 25px">"Reduce expectations and adjust your mindset"</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

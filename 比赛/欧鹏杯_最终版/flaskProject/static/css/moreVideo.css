@@ -1,0 +1,41 @@
+.grid {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+p {
+  text-indent: 2rem;
+}
+
+img {
+  margin-top: 1rem;
+  width: 100%;
+  height: 15rem;
+}
+
+video:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  transform: translate(0, -5px);
+}
+
+video {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+a {
+  font-weight: normal;
+  color: rgb(177, 46, 50);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: red;
+}
+
+.grid hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

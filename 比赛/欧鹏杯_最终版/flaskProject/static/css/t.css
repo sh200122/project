@@ -1,0 +1,473 @@
+
+a{
+    text-decoration: none;
+    font-weight: 300;
+}
+a:link{
+    color: rgb(253, 235, 235);
+}
+a:visited{
+    color: rgb(252, 237, 237);
+}
+a:hover{
+    transition: color 0.3s;
+    color: rgb(255, 255, 255);
+    /* font-weight: 400; */
+    cursor: pointer;
+}
+a:active{
+    color: aliceblue;
+}
+ul,li{
+    list-style: none;
+}
+
+
+.wrapper{
+    width: 100vw;
+    height: 52.5em;
+    margin: auto;
+    position: relative;
+    overflow:hidden;
+    box-shadow: 0 0px 5px #00000056;
+    
+}
+.wrapper .img{
+    width: 100vw;
+    height: 100%;
+    position:absolute;
+    left: 0%;
+    top: 0%;
+    overflow:hidden;
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-image: url(../image/1.jpeg);
+}
+.wrapper .img .card{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0%;
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    /* flex-direction:column; */
+    justify-content:center;
+    align-items:center;
+}
+.wrapper .img .card:hover{
+    transition: all 0.5s;
+}
+.wrapper .img .card:nth-child(1){
+    background-image: url(../image/1.jpeg);
+}
+.wrapper .img .card:nth-child(2){
+    background-image: url(../image/2.jpeg);
+}
+.wrapper .img .card:nth-child(3){
+    background-image: url(../image/3.jpeg);
+}
+.wrapper .img .card:nth-child(4){
+    background-image: url(../image/4.jpg);
+}
+.wrapper .img .card:nth-child(5){
+    background-image: url(../image/5.jpg);
+}
+.wrapper .img .card p{
+    width: 30em;
+    padding: 1.5em;
+    display: block;
+    margin: auto;
+    margin-right: calc(25%+10em);
+    text-indent: 2em;
+    background-color: rgba(78, 78, 78, 0.514);
+    color: #fff;
+}
+.wrapper .Button{
+    width: 75em;
+    height: calc(3em * 3);
+    position:absolute;
+    right: calc(50% - 37.5em);
+    bottom: calc(20% - 5em);
+    overflow:hidden;
+    background-color: rgba(177, 46, 50, 0);
+    z-index: 4;
+    display: flex;
+    /* flex-direction:column; */
+    justify-content:space-around;
+    align-items:center;
+}
+.wrapper .Button li{
+    display: inline-block;
+    width: calc(4em * 3);
+    height: calc(3em * 3);
+    background-color: rgba(255, 255, 255, 0);
+    border-image-slice: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper .Button li:nth-child(1){
+    background-image: url(../image/1.jpeg);
+}
+.wrapper .Button li:nth-child(2){
+    background-image: url(../image/2.jpeg);
+}
+.wrapper .Button li:nth-child(3){
+    background-image: url(../image/3.jpeg);
+}
+.wrapper .Button li:nth-child(4){
+    background-image: url(../image/4.jpg);
+}
+.wrapper .Button li:nth-child(5){
+    background-image: url(../image/5.jpg);
+}
+.wrapper .Button li:hover{
+    transition: all 0.5s;
+}
+.wrapper .Button li a{
+    width: calc(4em * 3);
+    height: calc(3em * 3);
+    display: block;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.wrapper .Button li a:hover{
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about{
+    width: 100vw;
+    height: 50em;
+    background-color: rgb(241,241,241);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(../image/tjhg7BVgJ8z5IDX_Z_8of0IDTSifduJuhsnh_U56Nh8.jpg);
+    background-attachment: fixed;
+    border-top:solid 1px #000 ;
+    border-bottom:solid 1px #000 ;
+    position: relative;
+    /* filter: opacity(70%); */
+}
+.about  .t{
+    width: 70em;
+    margin: auto;
+    height: 30em;
+    background-color: rgba(241,241,241,0.95);
+    position:absolute;
+    left: calc(50% - 35em);
+    top: calc(50% - 12.5em);
+    overflow: hidden;
+}
+.about  .t *{
+    position: relative;
+    z-index: 2;
+}
+
+.about .sai{
+    width: 50em;
+    height: auto;
+    padding: 1em;
+    /* margin: auto; */
+    /* margin-top: calc(25% - 5em); */
+    left: 1em;
+    top: 2em;
+    background-color: rgba(241,241,241,0);
+}
+.about  *{
+    text-indent: 2em;
+}
+.about .sws{
+    width: 200%;
+    height: 200%;
+    padding: 1em;
+    margin: auto;
+    margin-top: calc(25% - 5em);
+    background-color: rgb(177, 46, 50);
+    position: absolute;
+    left: -5%;
+    top: 0%;
+    transform: rotate(-45rad);
+    z-index: 10;
+    box-shadow: 0 0px 5px #000000;
+}
+.about .sea{
+    width: 45em;
+    height: auto;
+    padding: 1em;
+    /* margin: auto; */
+    /* margin-bottom: calc(25% - 5em); */
+    top: 5em;
+    /* right: 2em; */
+    background-color: rgba(241,241,241,0);
+    left: calc(1em);
+}
+.about .sea p{
+    padding: 0.5em;
+}
+.about .sea p t{
+    color: rgb(177, 46, 50);
+}
+.about .go{
+    height: 100%;
+    width: 15em;
+    position: absolute;
+    right: 7em;
+    bottom: 0%;
+    z-index: 12;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    transform: rotate(-112.5rad);
+    /* background-color: rgba(241,241,241,0.9); */
+}
+.about .go li{
+    width: 15em;
+    transform: rotate(112.5rad);
+}
+.about .go li a{
+    font-size: small;
+}
+
+
+
+.ad_our{
+    width: 100vw;
+    height: 8em;
+    background-color: rgb(241,241,241);
+    display: flex;
+    /* flex-direction:column; */
+    justify-content:center;
+    align-items:center;
+}
+.ad_our li{
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.ad_our li a{
+    font-size: larger;
+    font-weight: 500;
+    color: #000;
+    padding: 1em;
+    border-bottom: 2.6px rgb(177, 46, 50) solid ;
+}
+.ad_our li p{
+    width: 70%;
+    margin: auto;
+    margin-top: 0.5em;
+    font-size: small;
+    font-weight: 500;
+}
+
+
+
+.story{
+    width: 100vw;
+    height: 56em;
+    background-color: rgb(241,241,241);
+    /* box-shadow: 0 0px 5px #00000056; */
+    border-top: solid 1px #000;
+    position: relative;
+    /* display: flex;
+    justify-content:center;
+    align-items:center; */
+}
+.story .card{
+    
+    background-color: aqua;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    box-shadow: 0 0px 5px #00000056;
+}
+.story .card:hover{
+    transition: all 0.5s;
+    box-shadow: 0 0px 10px #00000056;
+}
+.story .card:nth-child(1){
+    background-image: url(../image/高耀洁大图.png) ;
+    /* 20:9 */
+    width: 70em;
+    height: 22em;
+    left: calc(50% - 35em);
+    top: 3em;
+}
+.story .card:nth-child(2){
+    background-image: url(../image/约翰逊大图.png) ;
+    width: 34em;
+    height: 22.5em;
+    right: calc(50% + 1em);
+    bottom: 7em;
+}
+.story .card:nth-child(3){
+    background-image: url(../image/网文.png) ;
+    width: 34em;
+    height: 22.5em;
+    left: calc(50% + 1em);
+    bottom: 7em;
+}
+.story .card h2{
+    width: calc(65%);
+    margin: 17.5%;
+    margin-bottom: 5%;
+    position: absolute;
+    bottom: calc(0% + 20px);
+    background-color: rgb(241,241,241);
+    color:rgb(177, 46, 50) ;
+    text-align: center;
+}
+.story .card p{
+    width: calc(65%);
+    margin: 17.5%;
+    margin-bottom: 5%;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    background-color: rgb(241,241,241);
+    z-index: 1;
+    color:rgb(177, 46, 50) ;
+    
+}
+.story .go_stroy{
+    width: 7em;
+    height: 1em;
+    text-align: center;
+    padding: 0.5em;
+    position: absolute;
+    top: calc(50% - 3.25em);
+    left: calc(50% - 4em);
+    background-color: rgb(241,241,241);
+    border: solid 0.05em #ffffff00;
+}
+.story .go_stroy:hover{
+color: rgb(177, 46, 50) ;;
+    border: solid 0.05em rgb(177, 46, 50) ;
+  transition: all 0.5s;
+}
+.story .go_stroy {
+    color: rgb(177, 46, 50);
+}
+.story .go_stroy :visited{
+    color: rgb(177, 46, 50);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.donation{
+    width: 100vw;
+    height: 6em;
+    background-color: rgb(241,241,241);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../image/HIV.jpg);
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+.donation a{
+    
+    width: 5em;
+    height: 1em;
+    padding: 0.4em;
+    text-align: center;
+    border: solid 1px rgba(241, 241, 241, 0.336);
+    border-radius: 1.5em;
+    background-color: rgb(241,241,241) ;
+    color: rgb(177, 46, 50);
+}
+.donation a:hover{
+    background-color: rgb(241,241,241);
+    color: rgb(177, 46, 50) ;
+    border: solid 1px rgb(177, 46, 50) ;
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户信息完善</title>
+</head>
+ <style>
+        #progressBar {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        #progress {
+            width: 0%;
+            height: 30px;
+            background-color: #4caf50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+    </style>
+<body>
+    <h2>用户信息输入</h2>
+    <form action="/submit" method="post">
+        <label for="name">姓名:</label><br>
+        <input type="text" id="name" name="name" onclick="s()" required><br><br>
+
+        <label for="email">邮箱:</label><br>
+        <input type="email" id="email" name="email" onclick="s()" required><br><br>
+
+        <label for="phone">电话号码:</label><br>
+        <input type="tel" id="phone" name="phone"  onclick="s()"   required><br><br>
+
+        <label for="hobby">个人爱好:</label><br>
+        <textarea id="hobby" name="hobby" rows="4" cols="50"  onclick="s()"  required></textarea><br><br>
+
+        <input type="submit" value="提交"  onclick="s()" >
+    </form>
+</body>
+    <script>
+        function s(){
+            // 获取用户填写的信息
+            const name = document.getElementById("name"); // 用你的用户名替换这里
+            const email = document.getElementById("email"); // 用你的邮箱替换这里
+            const phone = document.getElementById("phone"); // 用你的电话号码替换这里
+            const hobby = document.getElementById("hobby");; // 用你的个人爱好替换这里
+            // 计算进度
+            let progress = 0;
+            if (name.textContent) progress += 25;
+            if (email.textContent) progress += 25;
+            if (phone.textContent) progress += 25;
+            if (hobby.textContent) progress += 25;
+
+            // 更新进度条
+            const progressBar = document.getElementById("progress");
+            progressBar.style.width = progress + "%";
+            progressBar.innerHTML = progress + "% 完成";
+        }
+
+    </script>
+</html>
+
+
+
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<head lang="zh">
+    <meta charset="utf-8"/>
+    <title>每天服用HIV药物的提示</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body{
+        width: 100vw;
+        background-color: rgb(241,241,241);
+        overflow-x:hidden;
+    }
+    </style>
+
+    <script src="../static/js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/head.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/t.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/end.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/about.css">
+</head>
+<body>
+    <div class="H" >
+        <table class="title">
+            <tr class="h1">
+                <!-- <td style="color: rgb(234, 234, 235);font-size:larger;font-weight: 900;">艾滋病咨询交流网站</td> -->
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="h2">
+                
+                <td  class="title_icon">
+                    <div class="title_t">
+                        <p class="top">H&nbsp;&nbsp;I&nbsp;&nbsp;V</p>
+                        <h6 >	
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
+                        </h6>
+                        <p class="botton">A&nbsp;I&nbsp;D&nbsp;S</p>
+                    </div>
+                </td>
+                <td >
+                    <a href="/index">首页</a>
+                </td>
+                <td >
+                    <a href="/story">故事</a>
+                    <!-- <div class="selec">
+                        <ul>
+                            <li><a href="/storyDetail1">故事1</a></li>
+                            <li><a href="/storyDetail2">故事2</a></li>
+                            <li><a href="/storyDetail3">故事3</a></li>
+                            <li><a href="/storyDetail4">故事4</a></li>
+                        </ul>
+                    </div> -->
+                </td>
+                <td >
+                    <a href="/about">资料库</a>
+                    <!-- <div class="selec">
+                        <ul>
+                            <li><a href="/about1">HIV概述</a></li>
+                            <li><a href="/about2">HIV检测</a></li>
+                            <li><a href="/about3">HIV预防</a></li>
+                            <li><a href="/about4">HIV治疗</a></li>
+                        </ul>
+                    </div> -->
+                </td>
+                <td ><a href="/jk">捐赠</a></td>
+                
+                <td ></td>
+                <td class="login">
+                    <a href="/" title="登录"> 
+                        <svg t="1713446597676" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7675" width="32" height="32"><path d="M512 422.4m-102.4 0a102.4 102.4 0 1 0 204.8 0 102.4 102.4 0 1 0-204.8 0Z" fill="#727272" p-id="7676"></path><path d="M512 64C264.96 64 64 264.96 64 512s200.96 448 448 448 448-200.96 448-448S759.04 64 512 64z m221.44 704c-28.16-96-116.48-166.4-221.44-166.4s-193.28 70.4-221.44 166.4h-52.48c23.04-102.4 102.4-183.04 204.8-208.64-49.92-25.6-83.2-76.8-83.2-136.96 0-84.48 69.12-153.6 153.6-153.6s153.6 69.12 153.6 153.6c0 60.16-34.56 111.36-83.2 136.96 101.12 25.6 180.48 106.24 204.8 208.64h-55.04z" fill="#727272" p-id="7677"></path><path d="M582.4 559.36c49.92-25.6 83.2-76.8 83.2-136.96 0-84.48-69.12-153.6-153.6-153.6s-153.6 69.12-153.6 153.6c0 60.16 34.56 111.36 83.2 136.96-101.12 25.6-180.48 106.24-204.8 208.64h52.48c28.16-96 116.48-166.4 221.44-166.4S704 672 732.16 768h52.48c-21.76-102.4-101.12-183.04-202.24-208.64zM409.6 422.4c0-56.32 46.08-102.4 102.4-102.4s102.4 46.08 102.4 102.4-46.08 102.4-102.4 102.4-102.4-46.08-102.4-102.4z" fill="#E2E2E2" p-id="7678"></path></svg>
+                    </a>
+                </td>
+            </tr>
+            
+            
+        </table>
+        <form class="h3">
+            <div></div>
+            <input class="in" type="text" name="value" placeholder="搜索"    />
+            
+            <input type="button" id="button" title="点击搜索">
+                <!-- <svg t="1712994058484" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2625" width="30" height="30"><path d="M469.333333 106.666667c200.298667 0 362.666667 162.368 362.666667 362.666666 0 86.08-29.994667 165.162667-80.085333 227.349334a20.949333 20.949333 0 0 1 10.901333 5.802666l135.765333 135.765334a21.333333 21.333333 0 0 1 0 30.165333l-30.165333 30.165333a21.333333 21.333333 0 0 1-30.165333 0l-135.765334-135.765333a21.226667 21.226667 0 0 1-5.845333-10.901333A360.96 360.96 0 0 1 469.333333 832c-200.298667 0-362.666667-162.368-362.666666-362.666667S269.034667 106.666667 469.333333 106.666667z m0 85.333333C316.16 192 192 316.16 192 469.333333s124.16 277.333333 277.333333 277.333334 277.333333-124.16 277.333334-277.333334S622.506667 192 469.333333 192z" fill="#222429" p-id="2626"></path></svg> -->
+            </input>
+        </form>
+    </div>
+
+
+
+
+    
+    <ul class="breadcrumb">
+        <li><a href="/index">首页</a></li>
+        <li><a href="/about">资料库</a></li>
+        <li><a href="/about4">HIV治疗</a></li>
+        <li class="active">每天服用HIV药物的提示</li>
+    </ul>
+    <div class="about_model">
+        <div class="buit">
+            <h2 style="color: rgb(0, 0, 0);font-weight: 500;">HIV检测</h2>
+            <div class="hia"></div>
+            <h6>每天服用HIV药物的提示</h6>
+        </div>
+        <ul class="elat">
+            <div class="tsess" >
+                
+                <div class="message">
+<!-- csc -->    
+                    <h3 class="t">有哪些技巧可以帮助我按照处方服用 HIV 药物？</h3>
+                    <p class="v"><img src="../static/image/keep_up_with_your_HIV_treatment.png"></p>
+                    <p class="v">无论您是新诊断出的HIV感染者还是已经感染HIV一段时间，您都可能正在寻求提示和工具来帮助您跟上HIV药物的步伐。            </p>
+                    <p class="v">HIV治疗包括服用称为抗逆转录病毒疗法（ART）的高效药物，这些药物可以控制血液中HIV病毒的数量（病毒载量）。建议所有HIV感染者接受抗逆转录病毒治疗，HIV感染者应在诊断后尽快开始抗逆转录病毒治疗，即使在同一天也是如此。</p>
+                    <p class="v">接受抗逆转录病毒治疗的人服用一种称为HIV治疗方案的HIV药物组合。一个人的初始治疗方案通常包括每天必须服用的至少两种不同药物类别的三种 HIV 药物。许多HIV感染者在一粒药丸中服用两种或多种不同的HIV药物。这些组合药物有很多选择。如果您的医务人员确定您符合某些要求，也可以每两个月注射一次长效 HIV 药物。</p>
+                    <p class="v">以下是一些提示，可以帮助您每天以药丸形式服用每剂HIV药物：</p>
+                    <p class="vs"><t>严格按照医务人员的处方制定治疗计划</t>。 根据您的治疗方案，医务人员会告诉您是否应该在一天中的特定时间服用 HIV 药物，随或不随某些食物。如果您对何时以及如何服用 HIV 药物有疑问，请咨询您的提供者或药剂师。</p>
+                    <p class="vs"><t>创建例程</t>。 将服用HIV药物添加到您每天已经做的事情中。 例如，如果您的医务人员规定每天早上将 HIV 药物与食物一起服用，请养成在早餐时服用的习惯。</p>
+                    <p class="vs"><t>尝试每周或每月一次的药盒</t>，一周中的每一天都有隔间，以帮助您记住当天是否服用了药物。</p>
+                    <p class="vs">在您的时钟、手表或手机上设置一个<t>闹钟</t>，以显示您服用 HIV 药物的时间。</p>
+                    <p class="vs">保持<t>每日日志或使用日历来记录</t>您服用 HIV 药物的天数。</p>
+                    <p class="vs">从互联网上下载一个<t>应用程序</t>到您的计算机或智能手机上，它可以帮助提醒您何时该服用 HIV 药物。搜索“提醒应用程序”，您会发现很多选择。</p>
+                    <p class="vs">在您的<t>药房设置自动补充</t>。 当您需要时，您的HIV药物将准备好，并且不会用完。</p>
+                    <p class="vs"><t>请家人或朋友鼓励您</t>，并每天给您打电话、发短信或电子邮件，提醒您服用 HIV 药物。当您养成服用HIV药物或适应新方案的习惯时，这可能特别有用。</p>
+                    <p class="vs">用小奖励来<t>奖励自己</t>，让他们在那一周或一个月内服用所有药丸。</p>
+                    <p class="vs"><t>继续定期去看医务人员</t>。 定期就诊对于监测血液中的病毒量以确保其无法检测到以及获得其他医疗支持非常重要。利用这些访问与医务人员公开讨论您可能需要的任何帮助，以坚持您的治疗计划。</p>
+                </div>
+                <div class="message">
+                    <h3 class="t">可以跳过剂量吗？</h3>
+                    <p class="v"><img src="../static/image/disclaimer.jpg"></p>
+                    <p class="v">当您以<t>药丸</t>形式服用HIV药物时，每天服用很重要，完全按照处方服用。                   </p>
+                    <p class="vs">这很重要，因为跳过剂量会使HIV更容易改变形式，导致您的药物停止工作。这称为耐药性。HIV可能会对您的药物和您尚未服用的类似药物产生耐药性。这限制了您成功治疗HIV的选择。耐药的HIV毒株也可以传播给其他人。</p>
+                    <p class="vs">每天服用 HIV 药物，完全按照医务人员的指示服用，将有助于保持病毒载量低和 CD4 细胞计数（抵抗感染的白细胞计数）高。如果你跳过剂量，即使偶尔，你也会给艾滋病毒迅速繁殖的机会。这可能会削弱你的免疫系统，你可能会生病。</p>
+                    <p class="vs">如果您错过了剂量，请咨询医务人员。在大多数情况下，如果您意识到自己错过了剂量，请尽快服用药物，然后在通常的预定时间服用下一剂（除非您的药剂师或医疗保健提供者告诉您不同的事情）。</p>
+                    <p class="v">当您的HIV治疗以<t>注射</t>形式进行时，遵循医生提供的给药时间表也非常重要。设定一致的注射日期可以帮助您保持正轨。</p>                    
+                </div>
+                <div class="message">
+                    <h3 class="t">我每天服用HIV药物可能会面临哪些挑战？</h3>
+                    <p class="v"><img src="../static/image/IMG_2986.jpg"></p>
+                    <p class="v">每天服用HIV药物可能很困难。这就是为什么了解您可能面临的一些挑战并在它们发生之前思考如何解决它们很重要的原因。例如，记住何时服用HIV药物可能很复杂。一些治疗方案包括每天服用几片药片（有或没有食物），或者在其他药物之前或之后服用。制定何时以及如何服药的时间表可能会有所帮助。或者咨询医务人员，了解复方避孕药是否适合您。</p>
+                    <p class="v">其他因素可能使您难以每天服用HIV药物，包括：</p>
+                    <p class="vs"><t>服用药物的问题</t>，如吞咽困难，可能会使坚持治疗变得具有挑战性。医务人员可以提供解决这些问题的提示和想法。</p>
+                    <p class="vs"><t>药物的副作用</t>，例如恶心或腹泻，会使人不想服用它们。请咨询医务人员。有一些药物或其他支持，如营养咨询，以确保你获得重要的营养素，这可以帮助解决最常见的副作用。但不要放弃。请与医务人员合作，找到适合您的治疗方法。</p>
+                    <p class="vs"><t>繁忙的日程安排</t>。 工作或离家旅行很容易忘记吃药。提前计划会有所帮助。或者，可以在工作或车内保留额外的HIV药物，以备忘记在家服用时使用;请务必与医务人员讨论您的药物，有些药物会受到极端温度的影响，例如在车内，并且并不总是可以使药物发挥作用。</p>
+                    <p class="vs"><t>生病或抑郁</t>。您的精神和身体感受会影响您坚持服用HIV药物的意愿。同样，医务人员是获得您可能需要的心理健康服务和支持的重要信息来源</p>
+                    <p class="vs"><t>酗酒或吸毒</t>。如果物质使用干扰了您定期服药或以其他方式保持健康的能力，那么可能是时候寻求帮助戒烟或更好地管理它了。</p>
+                    <p class="vs"><t>治疗疲劳</t>。有时人们会厌倦服用一段时间的HIV药物。每次您去看医务人员时，都要强调要坚持使用 HIV 药物。</p>
+                    <p class="vs"><t>污名</t>。 与艾滋病毒有关的耻辱感导致一些人错过了剂量，因为担心其他人可能会知道他们的艾滋病毒状况并拒绝它们。如果您感到脆弱，其他艾滋病毒感染者的支持小组和在线社区通常很有用。</p>
+                    <p class="vs"><t>可负担性</t>。有些人难以负担艾滋病毒药物。许多HIV诊所都有护理经理和福利顾问，他们可以帮助您确定您可能有资格获得哪些服务和计划。还有患者药物援助计划退出免责声明向没有保险或保险不足的低收入艾滋病毒感染者提供免费或减价的艾滋病毒药物。</p>
+                    <p class="v">医务人员将帮助您确定坚持 HIV 治疗方案的障碍以及解决这些障碍的方法。了解可能使您的HIV治疗方案难以跟上的问题将有助于您和医务人员选择最适合您的治疗方法。</p>
+                    <p class="v">如果您每天服用 HIV 药物有困难，请立即告诉医务人员。您可以一起确定不吃药的原因，并制定计划来解决这些原因。加入由服用HIV药物的其他人组成的同伴支持小组，或寻求家人和朋友的支持，也可以对您有所帮助。</p>
+                </div>
+                <div class="message">
+                    <h3 class="t">探索长效HIV治疗</h3>
+                    <p class="v">长效注射HIV治疗方案可用于病毒载量检测不到的人。在您服用大约一个月的每日一次的起始药后，由医疗保健提供者每隔一个月或每月注射两次。连续两个月注射后，每隔一个月开始一次治疗方案。参加所有约会很重要。如果您认为这对您来说可能是一个不错的选择，请咨询您的医疗保健提供者。如果您的医生开具了长效注射治疗，您将每隔一个月在同一天接受注射 HIV 治疗。为了帮助您的病毒载量保持检测不到，请务必保持预约并坚持您的 HIV 治疗计划。</p>
+                </div>
+            </div>
+            <!-- <li><a href="/">HIV概述</a></li> -->
+            <li><a href="/about_4_1">HIV治疗概述要性。</a></li>
+            <li><a href="/about_4_2">病毒抑制和检测不到的病毒载量</a></li>
+            <li><a href="/about_4_3">遵医嘱服用HIV药物</a></li>
+            <li><a href="/about_4_4"> 每天服用HIV药物的提示</a></li>
+        </ul>
+    </div>
+    
+
+
+    <div style="width: 100vw;box-shadow: 0 0px 5px #00000056;height: 15em;background-color: rgb(177, 46, 50);">
+        <div class="end">
+            <ul class="left">
+                <li>
+                    <h2>HIV &nbsp; and &nbsp; AIDS</h2>
+                </li>
+                <li>
+                    <a href="/ed1">联系我们                </a>
+                    <a href="/ed2">关于隐私                </a>
+                    <a href="/ed3">版权与使用限制           </a>
+                    <a href="/ed4">免责声明                </a>
+                    <a href="/ed5">许可权限                </a>
+                </li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <h2 >友情链接</h2>
+                </li>
+                <li>
+                    <a href="https://www.iconfont.cn">iconfont Logo</a>
+                    <a href="https://www.icrc.org/zh">红十字国际委员会</a>
+                    <a href="https://www.who.int/zh/home#">世卫组织</a>
+                    <a href="https://www.msdmanuals.cn/">默沙东诊疗手册</a>
+                    <a href="https://www.redcross.org.cn/">中国红十字会</a>
+                    <a href="https://hivinfo.nih.gov/">HIV&nbsp;Info</a>
+                    <a href="https://www.nih.gov/">美国国立卫生研究院</a>
+                    <a href="https://bic.cas.cn/">中国科学院国际合作局</a>
+                </li>
+            </ul>
+            <ul class="bottom">
+                
+                <li>
+                    <a style="padding: 0.8em;">© 19xx - 20xx 版权所有 xxxxxxxxxxxxxx 网站标识码</a>
+                </li>
+            </ul>
+        </div>
+    
+    </div>
+</body>
+</html>

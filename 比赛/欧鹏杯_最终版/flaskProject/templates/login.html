@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+    <form action="/" method="post" >
+        <input type="hidden" name="id" value="{{ id }}">
+        <h2 style="text-align: center">艾滋病毒知识普及网站登录</h2><hr>
+        <p id="a">{{ message }}</p>
+        <div>
+            <label for="name">用户名:</label>
+            <input type="text" id="name" name="ID" placeholder="请输入用户名/电话号码">
+        </div>
+        <div>
+            <label for="pass">密&nbsp;&nbsp;&nbsp;码:</label>
+            <input type="password" id="pass" name="password" placeholder="请输入密码">
+        </div>
+        <span id="msg" style="font-size: 12px;color: red;"></span><br>
+        <div class="pict">
+            <a id="x" href="/index"><img alt="游客登录" src="../static/image/游客登录.png"></a>
+            <a id="x" href="../static/image/login_wechat.jpg"><img alt="微信登录" src="../static/image/微信登录.png"></a>
+            <a id="x" href="../static/image/log_qq.jpg"><img alt="QQ登录" src="../static/image/QQ.png"></a>
+            <a id="x" href="../static/image/log_qq.jpg"><img alt="邮箱登录" src="../static/image/邮箱登录.png"></a>
+        </div>
+        <input type="submit" value="登录" id="login">
+        <a href="/register">还没有账号，去注册一个</a>
+    </form>
+</body>
+</html>

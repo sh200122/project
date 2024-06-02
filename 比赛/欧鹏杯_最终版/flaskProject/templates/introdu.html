@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>个人自序</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 15%;
+                background-color: #f1f1f1;
+                position: fixed;
+                height: 100%;
+                overflow: auto;
+            }
+ 
+            li a {
+                display: block;
+                color: #000;
+                padding: 15px 16px;
+                text-decoration: none;
+            }
+ 
+            li a.active {
+                background-color: #4CAF50;
+                color: white;
+            }
+            li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+            body{
+                margin: 0;
+                background-image:url(../static/image/4.jpg);
+                background-size:100% 100%;
+                background-attachment: fixed;
+                background-repeat:no-repeat;
+            }
+            td
+            {
+                padding:10px;
+            }
+            p{
+                font-size: 18px;
+            }
+            #progressBar {
+                height: 40px;
+                position: fixed;
+                bottom: 590px;
+                width: 100%;
+                background-color: #ddd;
+                display: inline;
+            }
+
+            #progress {
+                position: absolute;
+                width: 0%;
+                bottom: 0px;
+                height: 40px;
+                background-color: #4caf50;
+                text-align: center;
+                line-height: 30px;
+                color: white;
+            }
+            #content,info{
+                margin-top: 40px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div id="progressBar">
+            <span style="color: white;opacity: 0.4;margin-left: 550px">信息完整度</span>
+            <div id="progress">0%</div>
+        </div>
+        <div id="content">
+                <ul style="text-align: center;background-color: rgb(220, 69, 69)">
+                <li><img src="../static/img/个人.png" style="margin:30px 0px 30px;width:40%;border-radius:50%;border:8px solid #df1111;"></li>
+                <li><a href="/user"><p style="font-size: 18px;color: white">主页</p></a></li>
+                <li><a href="#info"><p style="font-size: 18px;color: white">基本信息</p></a></li>
+                <li><a href="#resume"><p style="font-size: 18px;color: white">个人简介</p></a></li>
+            </ul>
+            <div id="info" style="margin-left:15%;padding:1px 16px;">
+                <h1 style="text-align: center;">基本信息</h1>
+                <table style="width: 90%;">
+                    <tr>
+                        <p id="a" style="color: white">{{ message }}</p>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <td>昵称：<span id="nc">{{ nc }}</span></td>
+                        <td>性别：<span id="xb">{{ xb }}</span></td>
+                        <td>年龄：<span id="nl">{{ nl }}</span></td>
+                    </tr>
+                    <br><br>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+
+                    <tr>
+                        <td>家乡：<span id="jx">{{ jjx }}</span></td>
+                        <td>博客：<span id="bk">{{ bk }}</span></td>
+                        <td>邮箱：<span id="yx">{{ yx }}</span></td>
+                    </tr>
+                </table>
+                <img src="../img/background.jpg" style="margin-left: 200px;border-radius:50%;opacity: 0.1;">
+            </div>
+            <br><br><br><br>
+            <div id="resume" style="margin-left:15%;">
+                <br /> <br /> <br /> <br /> <br /><br /><br />
+                <h1 style="text-align: center;">个人简介</h1>
+                <div style="margin:0 15% 0 10% ">
+                    <p style="padding: 20px">
+                        <br />
+                    <div>个人简介：<span id="jj">{{ jj }}</span></div>
+                    </p>
+                    <br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+            function s(){
+                // 获取用户填写的信息
+                const nc = document.getElementById("nc");
+                const xb = document.getElementById("xb");
+                const nl = document.getElementById("nl");
+                const jx = document.getElementById("jx");
+                const bk = document.getElementById("bk");
+                const yx = document.getElementById("yx");
+                const jj = document.getElementById("nc");
+                // 计算进度
+                let progress = 0;
+                if (nc.textContent) progress += 14.28571428571429;
+                if (xb.textContent) progress += 14.28571428571429;
+                if (nl.textContent) progress += 14.28571428571429;
+                if (jx.textContent) progress += 14.28571428571429;
+                if (bk.textContent) progress += 14.28571428571429;
+                if (yx.textContent) progress += 14.28571428571429;
+                if (jj.textContent) progress += 14.28571428571429;
+
+                // 更新进度条
+                const progressBar = document.getElementById("progress");
+                progressBar.style.width = progress + "%";
+                progressBar.innerHTML = progress + "% 完成,太棒啦!";
+            }
+
+        </script>
+</html>

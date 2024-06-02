@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>艾滋故事</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../static/LIB/font/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/css/story.css">
+
+  <!-- 字体 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&family=Zhi+Mang+Xing&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- 导航 -->
+  <nav class="custom-nav">
+    <table class="custom-title">
+      <tr class="custom-h1">
+        <!-- <td style="color: rgb(234, 234, 235);font-size:larger;font-weight: 900;">艾滋病咨询交流网站</td> -->
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="custom-h2">
+        <td class="title_logo">
+          <div class="title_t">
+            <img src="../static/storyImages/logo2.webp" alt="" width="104em" height="106em">
+          </div>
+        </td>
+        <td>
+          <a href="/index">首页</a>
+        </td>
+        <td>
+          <a href="/story">故事</a>
+        </td>
+        <td>
+          <a href="/about">资料库</a>
+        </td>
+        <td><a href="/jk">捐赠</a></td>
+        <td></td>
+        <td class="login">
+          <a href="/" title="登录">
+            <svg t="1713446597676" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              p-id="7675" width="32" height="32">
+              <path d="M512 422.4m-102.4 0a102.4 102.4 0 1 0 204.8 0 102.4 102.4 0 1 0-204.8 0Z" fill="#727272"
+                p-id="7676"></path>
+              <path
+                d="M512 64C264.96 64 64 264.96 64 512s200.96 448 448 448 448-200.96 448-448S759.04 64 512 64z m221.44 704c-28.16-96-116.48-166.4-221.44-166.4s-193.28 70.4-221.44 166.4h-52.48c23.04-102.4 102.4-183.04 204.8-208.64-49.92-25.6-83.2-76.8-83.2-136.96 0-84.48 69.12-153.6 153.6-153.6s153.6 69.12 153.6 153.6c0 60.16-34.56 111.36-83.2 136.96 101.12 25.6 180.48 106.24 204.8 208.64h-55.04z"
+                fill="#727272" p-id="7677"></path>
+              <path
+                d="M582.4 559.36c49.92-25.6 83.2-76.8 83.2-136.96 0-84.48-69.12-153.6-153.6-153.6s-153.6 69.12-153.6 153.6c0 60.16 34.56 111.36 83.2 136.96-101.12 25.6-180.48 106.24-204.8 208.64h52.48c28.16-96 116.48-166.4 221.44-166.4S704 672 732.16 768h52.48c-21.76-102.4-101.12-183.04-202.24-208.64zM409.6 422.4c0-56.32 46.08-102.4 102.4-102.4s102.4 46.08 102.4 102.4-46.08 102.4-102.4 102.4-102.4-46.08-102.4-102.4z"
+                fill="#E2E2E2" p-id="7678"></path>
+            </svg>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <form class="custom-h3">
+      <input class="in" type="text" name="value" placeholder="搜索" />
+      <input type="button" id="button" title="点击搜索">
+    </form>
+  </nav>
+  <hr>
+  <main>
+    <div class="container text-center">
+      <div class="row" style="letter-spacing: .2rem;">
+        <div class="col-md-3" style="padding: 0;">
+          <div class="list-group">
+            <div class="list-group-item" style="background-color: rgb(247, 245, 245);">
+              <h5 style="font-weight: bold; line-height: 2rem;">故事<i class="bi bi-book"></i></h5>
+            </div>
+            <a href="/hot01" class="list-group-item list-group-item-action  my-list-group">90后青年创办了名为“艾滋公寓”</a>
+            <a href="/hero02" class="list-group-item list-group-item-action">吴仲仁：最美乡村医生。</a>
+            <a href="/hot03" class="list-group-item list-group-item-action">恐惧之力，常常超越疾病本身。</a>
+            <a href="/moreStorys" class="list-group-item list-group-item-action">更多>></a>
+            <div class="list-group-item" style="background-color: rgb(247, 245, 245);">
+              <h5 style="font-weight: bold; line-height: 2rem;">英雄<i class="bi bi-people-fill"></i></h5>
+            </div>
+            <a href="/hero01" class="list-group-item list-group-item-action">高耀洁</a>
+            <a href="/hero02" class="list-group-item list-group-item-action">魔术师约翰逊</a>
+            <a href="/hot03" class="list-group-item list-group-item-action">恩科西·约翰逊</a>
+            <a href="/moreHeros" class="list-group-item list-group-item-action">更多>></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../static/storyImages/长图4.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white;font-size: 1.5rem;">抗艾还需努力，故事还在延续！</h5>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../static/storyImages/小图1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white;font-size: 1.5rem;">抗艾之路漫长而艰难，每一个故事都充满了希望和坚持！</h5>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../static/storyImages/小图2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white;font-size: 1.5rem;">抗艾斗争不止步，每个成功的故事都激励着我们继续前行！</h5>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <!-- 图片自动切换 -->
+            <div id="carouselExampleSlidesOnly" class="carousel carousel-dark slide carousel-fade"
+              data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                  <img src="../static/storyImages/flowers/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="../static/storyImages/flowers/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="../static/storyImages/flowers/3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="../static/storyImages/flowers/4.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong>您的故事</strong>
+              </h5>
+              <p class="card-text">是别人的灯塔，是别人的力量之源；更是我们的有利资源，也是我们的战斗武器。</p>
+              <button type="button" class="btn btn-primary share-btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                分享故事<i class="bi bi-box-arrow-right"></i>
+              </button>
+
+              <!-- Modal实现的获取用户提交 -->
+              <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h6 class="modal-title" id="myModalLabel" style="font-weight: bold;">共同打破沉默</h6>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        id="closeBtn"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h6 style="text-align: left;">分享您的经历可以帮助打破关于艾滋病的沉默和误解。我们邀请您勇敢地讲出您的故事，因为每一个声音都有助于构建更加包容和理解的社会。</h6>
+                      <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                          style="height: 15rem"></textarea>
+                        <label for="floatingTextarea2">您的故事：</label>
+                        <div class="invalid-feedback" id="inputFeedback" style="display: none;">输入不能为空</div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        id="closeBtnFooter">关闭</button>
+                      <button type="button" class="btn btn-primary" id="submitBtn">提交</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Toast实现的提交成功后感谢用户 -->
+              <div class="toast" id="thankYouToast" role="alert" aria-live="assertive" aria-atomic="true"
+                style="width: 50%;">
+                <div class="toast-header">
+                  <strong class="me-auto">感谢您的故事</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  <img src="../static/storyImages/toast3.webp" alt="" width="100%" height="auto">
+                  <h6 style="text-align: left; margin-top: 1rem; margin-left: .5rem;">
+                    非常感谢您分享您的艾滋故事。您的勇敢和坦诚不仅帮助我们更好地理解这一疾病对个人和家庭的影响，也激励了我们继续努力提高公众意识和支持那些受到艾滋病影响的人。您的经历让我们更加坚信，通过共同的努力，我们可以为艾滋病患者创造一个更加包容和关爱的社会。再次感谢您的分享，您的故事意义非凡。
+                  </h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <div class="swiper-container">
+        <div class="title"><i class="bi bi-cup-hot-fill"></i><b>新鲜故事</b></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="/hot01">
+              <div class="card">
+                <img src="../static/storyImages/小图10.webp" class="card-img-top" alt="...">
+                <div class="card-body my-card-body">
+                  <p class="card-text">90后青年创办了名为“艾滋公寓”</p>
+                  <p class="my-p">一天前</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/hot02">
+              <div class="card">
+                <img src="../static/storyImages/小图10.jpg" class="card-img-top" alt="...">
+                <div class="card-body my-card-body">
+                  <p class="card-text">吴仲仁：最美乡村医生。</p>
+                  <p class="my-p">一天前</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/hot03">
+              <div class="card">
+                <img src="../static/storyImages/小图3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body my-card-body">
+                  <p class="card-text">恐惧之力，常常超越疾病本身。</p>
+                  <p class="my-p">一天前</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/hot04">
+              <div class="card">
+                <img src="../static/storyImages/小图2.png" class="card-img-top" alt="...">
+                <div class="card-body my-card-body">
+                  <p class="card-text">艾滋患者需要尊重和公平。</p>
+                  <p class="my-p">二天前</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/hot05">
+              <div class="card">
+                <img src="../static/storyImages/小图8.jpg" class="card-img-top" alt="...">
+                <div class="card-body my-card-body">
+                  <p class="card-text">令人痛心！一位艾滋女孩的眼泪</p>
+                  <p class="my-p">二天前</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/hot06">
+              <div class="card">
+                <img src="../static/storyImages/小图7.png" class="card-img-top" alt="...">
+                <div class="card-body my-card-body">
+                  <p class="card-text">班久的曲折求职路</p>
+                  <p class="my-p">二天前</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- 导航按钮 -->
+        <div class="swiper-button-prev my-btn"></div>
+        <div class="swiper-button-next my-btn"></div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="title hot"><i class="bi bi-fire"></i><b>热门视频</b></div>
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">《达拉斯买家俱乐部》</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">《艾滋病患儿的影子爸爸》</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">感染者故事</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">《一生所艾》</a>
+            <a class="list-group-item list-group-item-action" href="/HTML/moreVideo">更多视频>></a>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+            class="scrollspy-example" tabindex="0">
+            <h4 id="list-item-1">《达拉斯买家俱乐部》</h4>
+            <video
+              src="https://cn-xj-ct-01-01.bilivideo.com/upgcxcode/71/72/1470237271/1470237271-1-192.mp4?e=ig8euxZM2rNcNbRz7bdVhwdlhWhjhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1716193831&gen=playurlv2&os=bcache&oi=3074793185&trid=000077492f1d36ac429ab56f1f00d3ba9689T&mid=202208675&platform=html5&upsig=f2760b8a929c58a1e0ca54d4d803c147&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&cdnid=87001&bvc=vod&nettype=0&bw=136693&orderid=0,1&buvid=&build=0&mobi_app=&f=T_0_0&logo=80000000"
+              controls></video>
+            <h4 id="list-item-2">《艾滋病患儿的影子爸爸》</h4>
+            <video src="https://www.bilibili.com/video/BV1QK4y1V7oa?t=92.8" controls></video>
+            <h4 id="list-item-3">感染者故事</h4>
+            <video
+              src="https://upos-sz-mirrorcos.bilivideo.com/upgcxcode/90/49/272264990/272264990-1-208.mp4?e=ig8euxZM2rNcNbhj7zdVhwdlhzTahwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1716009782&gen=playurlv2&os=alibv&oi=2584261250&trid=334ba021b38a4d168a595b1d94bc9becO&mid=0&platform=html5&upsig=42ff51b267b91de22d0ac014c89a9207&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&bvc=vod&nettype=1&orderid=0,3&buvid=&build=7330300&f=O_0_0&bw=367961&logo=80000000"
+              controls></video>
+            <h4 id="list-item-4">《一生所艾》</h4>
+            <video
+              src="https://upos-sz-mirrorcos.bilivideo.com/upgcxcode/90/49/272264990/272264990-1-208.mp4?e=ig8euxZM2rNcNbhj7zdVhwdlhzTahwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1716009782&gen=playurlv2&os=alibv&oi=2584261250&trid=334ba021b38a4d168a595b1d94bc9becO&mid=0&platform=html5&upsig=42ff51b267b91de22d0ac014c89a9207&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&bvc=vod&nettype=1&orderid=0,3&buvid=&build=7330300&f=O_0_0&bw=367961&logo=80000000"
+              controls></video>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+  </main>
+
+  <footer>
+    <div style="width: 100vw;box-shadow: 0 0px 5px #00000056;height: 15em;background-color: rgb(177, 46, 50);">
+      <div class="end">
+        <ul class="left">
+          <li>
+            <h2 style="width: 10em; background-color: #fff; font-weight: 300;text-align: center;">HIV &nbsp; and
+              &nbsp; AIDS</h2>
+          </li>
+          <li>
+            <a href="ed1">联系我们 </a>
+            <a href="ed2">关于隐私 </a>
+            <a href="ed3">版权与使用限制 </a>
+            <a href="ed4">免责声明 </a>
+            <a href="ed5">许可权限 </a>
+          </li>
+        </ul>
+        <ul class="right">
+          <li>
+            <h2 style="font-weight: 400;width: 7em; background-color: #fff;text-align: center;">友情链接</h2>
+          </li>
+          <li>
+            <a href="https://www.iconfont.cn">iconfont Logo</a>
+            <a href="https://www.icrc.org/zh">红十字国际委员会</a>
+            <a href="https://www.who.int/zh/home#">世卫组织</a>
+            <a href="https://www.msdmanuals.cn/">默沙东诊疗手册</a>
+            <a href="https://www.redcross.org.cn/">中国红十字会</a>
+            <a href="https://hivinfo.nih.gov/">HIV&nbsp;Info</a>
+            <a href="https://www.nih.gov/">美国国立卫生研究院</a>
+            <a href="https://bic.cas.cn/">中国科学院国际合作局</a>
+          </li>
+        </ul>
+        <ul class="bottom">
+
+          <li>
+            <a style="padding: 0.8em;">© 19xx - 20xx 版权所有 xxxxxxxxxxxxxx 网站标识码</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../static/js/story.js"></script>
+</body>
+
+</html>

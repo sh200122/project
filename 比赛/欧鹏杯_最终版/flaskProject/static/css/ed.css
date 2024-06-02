@@ -1,0 +1,24 @@
+
+.ed{
+    width: 70em;
+    height: auto;
+    min-height: 45em;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: #ffffff38;
+    box-shadow: 0 0px 5px #a5a5a5;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+}
+.ed li{
+    display: block;
+    font-size: small;
+    min-height: 1.5em;
+}
+.ed li h2{
+    font-size: 200;
+}

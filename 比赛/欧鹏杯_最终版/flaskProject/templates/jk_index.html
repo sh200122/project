@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艾滋病募捐界面</title>
+    <link rel="stylesheet" href="../static/css/donation.css">
+    <link rel="stylesheet" href="../static/css/allTitle.css">
+    <link rel="stylesheet" href="../static/css/at.alicdn.com/t/c/font_4092654_umjhzn2kiyf.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/head.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/t.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/end.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+</style>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="H" style="position: absolute;background-color: rgb(177,46,50);z-index: 4;">
+                <table class="title">
+            <tr class="h1">
+                <!-- <td style="color: rgb(234, 234, 235);font-size:larger;font-weight: 900;">艾滋病咨询交流网站</td> -->
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="h2">
+
+                <td  class="title_icon">
+                    <div class="title_t">
+                        <p class="top">H&nbsp;&nbsp;I&nbsp;&nbsp;V</p>
+                        <h6 >
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
+                        </h6>
+                        <p class="botton">A&nbsp;I&nbsp;D&nbsp;S</p>
+                    </div>
+                </td>
+                <td >
+                    <a href="/index">首页</a>
+                </td>
+                <td >
+                    <a href="/story">故事</a>
+                </td>
+                <td >
+                    <a href="/about">资料库</a>
+                </td>
+                <td ><a href="jk">捐赠</a></td>
+
+                <td ></td>
+                <td class="login">
+                    <a href="/" title="登录">
+                        <svg t="1713446597676" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7675" width="32" height="32"><path d="M512 422.4m-102.4 0a102.4 102.4 0 1 0 204.8 0 102.4 102.4 0 1 0-204.8 0Z" fill="#727272" p-id="7676"></path><path d="M512 64C264.96 64 64 264.96 64 512s200.96 448 448 448 448-200.96 448-448S759.04 64 512 64z m221.44 704c-28.16-96-116.48-166.4-221.44-166.4s-193.28 70.4-221.44 166.4h-52.48c23.04-102.4 102.4-183.04 204.8-208.64-49.92-25.6-83.2-76.8-83.2-136.96 0-84.48 69.12-153.6 153.6-153.6s153.6 69.12 153.6 153.6c0 60.16-34.56 111.36-83.2 136.96 101.12 25.6 180.48 106.24 204.8 208.64h-55.04z" fill="#727272" p-id="7677"></path><path d="M582.4 559.36c49.92-25.6 83.2-76.8 83.2-136.96 0-84.48-69.12-153.6-153.6-153.6s-153.6 69.12-153.6 153.6c0 60.16 34.56 111.36 83.2 136.96-101.12 25.6-180.48 106.24-204.8 208.64h52.48c28.16-96 116.48-166.4 221.44-166.4S704 672 732.16 768h52.48c-21.76-102.4-101.12-183.04-202.24-208.64zM409.6 422.4c0-56.32 46.08-102.4 102.4-102.4s102.4 46.08 102.4 102.4-46.08 102.4-102.4 102.4-102.4-46.08-102.4-102.4z" fill="#E2E2E2" p-id="7678"></path></svg>
+                    </a>
+                        <div class="selec">
+                            <ul>
+                                <li><a href="/user?id={{ id }}" style="font-size: large">个人中心</a></li>
+                                <li><a href="/" style="font-size: large">登录</a></li>
+                                <li><a href="/register" style="font-size: large">注册</a></li>
+                            </ul>
+                        </div>
+                </td>
+            </tr>
+        </table>
+        <form class="h3">
+            <div></div>
+            <input class="in" type="text" name="value" placeholder="搜索" />
+
+            <input type="button" id="button" title="点击搜索">
+            <!-- <svg t="1712994058484" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2625" width="30" height="30"><path d="M469.333333 106.666667c200.298667 0 362.666667 162.368 362.666667 362.666666 0 86.08-29.994667 165.162667-80.085333 227.349334a20.949333 20.949333 0 0 1 10.901333 5.802666l135.765333 135.765334a21.333333 21.333333 0 0 1 0 30.165333l-30.165333 30.165333a21.333333 21.333333 0 0 1-30.165333 0l-135.765334-135.765333a21.226667 21.226667 0 0 1-5.845333-10.901333A360.96 360.96 0 0 1 469.333333 832c-200.298667 0-362.666667-162.368-362.666666-362.666667S269.034667 106.666667 469.333333 106.666667z m0 85.333333C316.16 192 192 316.16 192 469.333333s124.16 277.333333 277.333333 277.333334 277.333333-124.16 277.333334-277.333334S622.506667 192 469.333333 192z" fill="#222429" p-id="2626"></path></svg> -->
+            </input>
+        </form>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="donation-container">
+        <table class="left">
+            <tr>
+                <td>
+                    <div style="margin-top: 150px;margin-left: 150px;">
+                        <div class="donation-header">
+                            <h1>支持艾滋病防治，共建健康社会</h1>
+                            <image src="../static/image/top.jpg" alt="艾滋病红丝带" style="width: 200px;width: 200px;">
+                        </div>
+                        <div class="donation-info">
+                            <p class="p1">
+                                支持艾滋病防治，共建健康社会是每个人的责任，也是社会文明进步的重要标志。以下是一些关于如何支持艾滋病防治和共建健康社会的建议：
+                            </p>
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;1、倡导健康生活方式：倡导健康、文明、科学的生活方式，包括合理饮食、适量运动、避免不良性行为等。这些健康生活方式有助于降低感染艾滋病的风险，提高人们的身体素质和免疫力。
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;2、倡导社会关爱：鼓励社会各界人士积极参与艾滋病防治工作，为艾滋病感染者提供关爱和支持。可以通过志愿者活动、慈善捐赠等方式，为艾滋病感染者提供物质和精神上的帮助。
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <!-- 捐赠表 -->
+                    <div class="control" style="border: 1px solid #ec5252;margin-top: 50px;">
+                        <div class="item">
+                            <div class="active">一次性的</div>
+                            <div>一月一次的</div>
+                        </div>
+                        <div class="content">
+                            <p align="center">感谢您慷慨的捐赠！</p>
+                            <div style="display: block;">
+                                <button class="b1" id="myButton1">&nbsp;￥250&nbsp;</button>
+                                <button id="myButton2">&nbsp;￥500&nbsp;</button>
+                                <button id="myButton3">￥1000</button>
+                                <br>
+                                <button class="b1" id="myButton4">￥2000</button>
+                                <button id="myButton5">￥3500</button>
+                                <button id="myButton6">￥7000</button>
+                            </div>
+                            <div>
+                                <button class="b1" id="myButton7">&nbsp;￥100&nbsp;</button>
+                                <button id="myButton8">&nbsp;￥140&nbsp;</button>
+                                <button id="myButton9">&nbsp;￥180&nbsp;</button>
+                                <br>
+                                <button class="b1" id="myButton10">&nbsp;￥250&nbsp;</button>
+                                <button id="myButton11">&nbsp;￥300&nbsp;</button>
+                                <button id="myButton12">&nbsp;￥350&nbsp;</button>
+                            </div>
+                        </div>
+                        <div class="input_style">
+                            <span style="margin-left: 47px;margin-bottom: 5px;">捐赠金额</span>
+                            <br>
+                            <input type="text" id="myInput">
+                            <button class="b2" id="showPopup" onclick="showPopup()">
+                                <span>捐赠与支持</span>
+                            </button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <hr width="5px" color="#a91e31">
+        <table style="margin-top: 80px;margin-left: 100px;">
+            <tr style="line-height: 10px;">
+                <td>
+                    <!-- 关于我们 -->
+                    <div class="about-us-container" id="about_us">
+                        <h2>关于我们</h2>
+                        <div class="about-us-content">
+                            <!-- <p>关于我们</p> -->
+                            <p>我们的组织致力于抗击艾滋病，通过筹集资金、提高公众意识、支持研究等方式，为那些受艾滋病影响的人们提供帮助。</p>
+                            <p>我们相信，通过全球合作和不懈努力，我们可以减少艾滋病的传播，并为那些已经感染的人们提供更好的治疗和支持。</p>
+                            <p>自成立以来，我们已经成功筹集了数百万的捐款，用于支持各种与艾滋病相关的项目和活动。我们感谢所有支持我们的人们，没有你们，我们无法取得今天的成就。</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <!-- 免责弹窗 -->
+    <div id="overlay">
+        <div class="popup">
+            <p class="popup_title">免责声明</p>
+            <p class="popup_content">我自愿为艾滋病患者提供捐款服务</p>
+            <div class="popup_btn">
+                <button class="cancelBtn" onclick="hidePopup()">取消</button>
+                <button class="b2">
+                    <a href="/jk_afford" style="text-decoration: none;color: white;">确定</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部信息区 -->
+    <div style="width: 100vw;box-shadow: 0 0px 5px #00000056;height: 15em;background-color: rgb(177, 46, 50);">
+        <div class="end">
+            <ul class="left">
+                <li>
+                    <h2 style="width: 10em; background-color: #fff; font-weight: 300;text-align: center;">HIV &nbsp; and
+                        &nbsp; AIDS</h2>
+                </li>
+                <li>
+                    <a href="/ed1">联系我们 </a>
+                    <a href="/ed2">关于隐私 </a>
+                    <a href="/ed3">版权与使用限制 </a>
+                    <a href="/ed4">免责声明 </a>
+                    <a href="/ed5">许可权限 </a>
+                </li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <h2 style="font-weight: 400;width: 7em; background-color: #fff;text-align: center;">友情链接</h2>
+                </li>
+                <li>
+                    <a href="https://www.iconfont.cn">iconfont Logo</a>
+                    <a href="https://www.icrc.org/zh">红十字国际委员会</a>
+                    <a href="https://www.who.int/zh/home#">世卫组织</a>
+                    <a href="https://www.msdmanuals.cn/">默沙东诊疗手册</a>
+                    <a href="https://www.redcross.org.cn/">中国红十字会</a>
+                    <a href="https://hivinfo.nih.gov/">HIV&nbsp;Info</a>
+                    <a href="https://www.nih.gov/">美国国立卫生研究院</a>
+                    <a href="https://bic.cas.cn/">中国科学院国际合作局</a>
+                </li>
+            </ul>
+            <ul class="bottom">
+
+                <li>
+                    <a style="padding: 0.8em;">© 19xx - 20xx 版权所有 xxxxxxxxxxxxxx 网站标识码</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+<script src="../static/js/donation_table.js"></script>
+
+</html>

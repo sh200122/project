@@ -1,0 +1,134 @@
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color: rgb(255, 255, 255);
+}
+a:visited{
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    transition: color 0.3s;
+    color: rgb(189, 181, 181);
+}
+a:active{
+    color: aliceblue;
+}
+.title{
+    width: 100vw;
+    height: 8em;
+    background-color: rgb(241,241,241);
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    box-shadow: 0 0px 5px #aaaaaa;
+}
+.title .h1{
+    width: 100vw;
+    height: 4em;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    z-index: 2;
+    background-color: rgb(177,46,50);
+    /* background-image: url(../image/2.png); */
+    background-size:cover;
+    background-position: center;
+    /* border-bottom: 0.3em rgba(255, 255, 255, 1) solid; */
+}
+.title .h1 td{
+    height: 100%;
+}
+.title .h1 #is{
+    border-bottom: 0.3em rgb(255, 255, 255) solid;
+}
+
+
+
+.title .h2{
+    width: 100vw;
+    height: 4em;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    z-index: 2;
+    color: aliceblue;
+    background-color: rgb(177,46,50);
+    /* 78, 233, 225, */
+}
+.title .h2 td{
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    z-index: 2;
+    /* border-bottom: 0.3em rgba(255, 255, 255, 1) solid; */
+}
+.title .h2 td input{
+    width: 100%;
+    height: 2.5em;
+    border: 1px rgba(187, 156, 156, 0.459) solid;
+    text-indent: 2em;
+}
+.title .h2 td input:hover{
+    border: 1px rgb(0, 0, 0)  solid;
+    transition: border 0.5s;
+}
+.title .h2 td button{
+    width: 5vw;
+    background-color: rgba(240, 248, 255, 0);
+    border-left: 1px blanchedalmond solid;
+    border-right: 1px blanchedalmond solid;
+    border-top: 0px rgba(0, 0, 0, 0) solid;
+    border-bottom: 0px rgba(0, 0, 0, 0) solid;
+    cursor: pointer;
+}
+.title .h2 td button:hover{
+    transition: width 0.5s;
+    width: 50%;
+}
+.title .h2 td button .icon{
+    height: 80%;
+    border: 0;
+}
+.title .h2 td button .icon:hover{
+    transition: height 0.5s;
+    height: 100%;
+}
+
+
+
+.title .h2 .title_icon .title_t{
+    /* position: absolute;
+    left: 1.5vw; */
+    box-shadow: 0 0px 5px #a5a5a5;
+    color: rgb(177,46,50);
+    background-color: rgb(255, 255, 255);
+    padding: 0.2em;
+}
+.title .h2 .title_icon .title_t p{
+    font-weight:300;
+    font-size: xx-large;
+}
+.title .h2 .login{
+    cursor: pointer;
+    /* border-bottom: 0.3em rgb(255, 255, 255) solid;  */
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    /* position: relative;
+    left: 15%;
+    bottom: 15%; */
+    /* background: linear-gradient(to left, rgba(241,241,241,1),rgba(241, 241, 241, 0)); */
+
+}
+.title .h2 .login a{
+    
+    position: relative;
+    /* left: 25%;
+    bottom: 15%;  */
+    
+}

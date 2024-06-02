@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支付界面</title>
+    <link rel="stylesheet" href="../static/css/donation.css">
+</head>
+<style>
+    .afford_window {
+        display: flex;
+    }
+
+    body {
+        background: url("../static/image/背景.jpg") no-repeat center center fixed;
+        /*兼容浏览器版本*/
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <div class="afford_window">
+        <div class="afford_window1" style="background-color: rgba(255, 255, 255, 0.5);">
+            <h1 style="color: #a91e31;">信息登记表</h1>
+            <form action="/submit_form" method="post"> <!-- 这里的action属性应该指向你的服务器处理表单提交的URL -->
+
+                <!-- 姓名 -->
+                <label for="name">姓名:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <!-- 电话号码 -->
+                <label for="email">电话号码:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- 年龄 -->
+                <label for="age">年龄:</label><br>
+                <input type="number" id="age" name="age" min="1" required><br><br>
+
+                <!-- 性别 -->
+                <label for="gender">性别:</label><br>
+                <select id="gender" name="gender" required
+                    style="color: #a91e31;border-radius: 3px;height: 20px;border: 1px solid #a91e31 ;">
+                    <option value="">请选择</option>
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                </select><br><br>
+
+                <!-- 提交按钮 -->
+                <div style="text-align: center;">
+                    <input type="submit" value="提交"
+                        style="background: #a91e31;width: 50px;border-radius: 3px;text-decoration: none;cursor: pointer;border: #a91e31;height: 23px;">
+
+                </div>
+
+            </form>
+        </div>
+
+        <div class="afford_window2" style="background-color: rgba(255, 255, 255, 0.5);">
+            <h1 style="color: #a91e31;">支付方式</h1>
+            <div style="float: left;">
+                    <img src="../static/image/alipay.jpg" alt="支付宝" style="width: 30%;margin-right: 50px;">
+                
+                    <img src="../static/image/wechat_afford.png" alt="微信" style="width: 30%;">
+
+            </div>
+
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <a href="/jk_index">
+            <button
+                style="margin-top: -200px; border: #a91e31; border-radius: 30px;cursor: pointer;font-size: 20px; width: 60px;height: 60px;color: white;background: #a91e31;">返回</button>
+        </a>
+    </div>
+</body>
+
+</html>

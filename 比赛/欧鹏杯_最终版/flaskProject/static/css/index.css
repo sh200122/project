@@ -1,0 +1,58 @@
+
+.title1{
+    background-color: rgb(255, 135, 135);
+    font-size: 24px;
+    text-align: center;
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+}
+
+.title1 div:last-child{
+    font-size: 16px;
+    color: #999;
+}
+
+.dona{
+    
+    background-color: #fff;
+}
+
+.dona .img{
+    float: right;
+    margin-top:7%;
+    width: 350px;
+}
+
+.dona .text{
+    margin-right: 300px;
+    padding: 20px 80px 20px 0;
+}
+
+.dona .text h4{
+    margin: 0;
+    padding-left: 75px;
+    border-bottom: 2px solid pink;
+    font-size: 24px;
+    line-height: 2;
+    display: inline-block;
+}
+
+.dona .text p{
+    margin: 0;
+    padding: 24px 0 24px 75px;
+    color: #999;
+    line-height: 1.8;
+    text-indent: 2em;
+}
+
+.dona .money{
+    display: block;
+    width: 168px;
+    margin-left: 75px;
+    border: 1px solid pink;
+    line-height: 43px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: pink;
+}

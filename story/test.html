@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .title {
+      width: 100vw;
+      /* height: 8em; */
+      background-color: rgb(177, 46, 50);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0px 5px #aaaaaa;
+      margin-bottom: 1px;
+    }
+
+    .title .h1 {
+      width: 70em;
+      height: 1em;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      top: 1em;
+    }
+
+    .title .h1 td {
+      color: #a5a5a500;
+      font-weight: 100;
+    }
+
+    .title .h2 {
+      width: 70em;
+      height: 4em;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      /* z-index: 2; */
+      color: aliceblue;
+      background-color: rgb(177, 46, 50);
+    }
+
+    .title .h2 td {
+      width: 4em;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      position: relative;
+    }
+
+    .title .h2 td a {
+      width: 100%;
+      text-align: center;
+      font-size: larger;
+      font-weight: 700;
+    }
+
+    .title .h2 td:hover .selec {
+      display: block;
+    }
+
+    .title .h2 td .selec {
+      width: 6em;
+      height: auto;
+      min-height: 2em;
+      position: absolute;
+      top: 3em;
+      left: 0em;
+      background-color: rgb(177, 46, 50);
+      z-index: 10;
+      display: none;
+    }
+
+    .title .h2 td .selec ul {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 4;
+    }
+
+    .title .h2 td .selec ul li {
+      width: 100%;
+      padding-bottom: 0.5em;
+      position: relative;
+      z-index: 4;
+      /* height: 100%; */
+    }
+
+    .title .h2 td .selec a {
+      width: 100%;
+      /* padding: 0.5em; */
+      margin: auto;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+      z-index: 4;
+    }
+
+    .title .h2 td input {
+      width: 100%;
+      height: 2.5em;
+      border: 1px rgba(187, 156, 156, 0.459) solid;
+      text-indent: 2em;
+    }
+
+    .title .h2 td input:hover {
+      border: 1px rgb(0, 0, 0) solid;
+      transition: border 0.5s;
+    }
+
+
+
+
+    .title .h2 .sou {
+      flex-direction: column;
+    }
+
+    .title .h2 .title_icon {
+      position: relative;
+      z-index: 10;
+    }
+
+    .title .h2 .title_icon .title_t {
+      box-shadow: 0 0px 5px #a5a5a5;
+      color: rgb(177, 46, 50);
+      background-color: rgb(255, 255, 255);
+      padding: 0.2em;
+    }
+
+    .title .h2 .title_icon .title_t p {
+      font-weight: 300;
+      font-size: xx-large;
+    }
+
+    .title .h2 .login {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title .h2 .login a {
+      position: relative;
+      height: 2em;
+    }
+
+    .title tr td a:hover {
+      transition: all 0.2s;
+      background-color: rgb(255, 255, 255);
+      color: rgb(177, 46, 50);
+    }
+
+
+    .h3 {
+      background-color: rgb(177, 46, 50);
+      ;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* z-index: 2; */
+      position: relative;
+      padding: 0.3em;
+      border-top: solid 1px #fff;
+      /* border-bottom: solid 1px #fff; */
+    }
+
+    .h3 .in {
+      width: 35em;
+      height: 2em;
+      border-radius: 1em;
+      text-align: center;
+      margin-right: 5em;
+      /* margin-left: 20em; */
+      border: 1px solid rgb(177, 46, 50);
+    }
+
+    .h3 .in:hover {
+      border: 1px rgba(0, 0, 0, 0.308) solid;
+      transition: all 0.5s;
+    }
+
+    .h3 #button {
+      width: 2em;
+      height: 2em;
+      background-color: rgba(177, 46, 50, 0);
+      border: 1px solid rgba(0, 0, 0, 0);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 1em;
+      background-image: url(../image/1.svg);
+      background-size: 2em;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .h3 #button:hover {
+      transition: all 0.5s;
+      /* width: 4em; */
+
+      border: 1px solid rgb(177, 46, 50);
+    }
+
+    .h3 #button .icon {
+      height: 2em;
+      width: 2em;
+    }
+
+    .h3 #button .icon:hover {
+      transition: all 0.5s;
+      color: aliceblue;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 300;
+    }
+
+    a:link {
+      color: rgb(253, 235, 235);
+    }
+
+    a:visited {
+      color: rgb(252, 237, 237);
+    }
+
+    a:hover {
+      transition: color 0.3s;
+      color: rgb(255, 255, 255);
+      /* font-weight: 400; */
+      cursor: pointer;
+    }
+
+    a:active {
+      color: aliceblue;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="title">
+    <tr class="h1">
+      <!-- <td style="color: rgb(234, 234, 235);font-size:larger;font-weight: 900;">艾滋病咨询交流网站</td> -->
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="h2">
+
+      <td class="title_icon">
+        <div class="title_t">
+          <p class="top">H&nbsp;&nbsp;I&nbsp;&nbsp;V</p>
+          <h6 style="font-weight:900;font-size: xx-small;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
+          </h6>
+          <p class="botton">A&nbsp;I&nbsp;D&nbsp;S</p>
+        </div>
+      </td>
+      <td>
+        <a href="index.html">首页</a>
+      </td>
+      <td>
+        <a href="story.html">故事</a>
+        <div class="selec">
+          <ul>
+            <li><a href="storyDetail1.html">故事1</a></li>
+            <li><a href="storyDetail2.html">故事2</a></li>
+            <li><a href="storyDetail3.html">故事3</a></li>
+            <li><a href="storyDetail4.html">故事4</a></li>
+          </ul>
+        </div>
+      </td>
+      <td>
+        <a href="about.html">资料库</a>
+        <div class="selec">
+          <ul>
+            <li><a href="about1.html">HIV概述</a></li>
+            <li><a href="about2.html">HIV检测</a></li>
+            <li><a href="about3.html">HIV预防</a></li>
+            <li><a href="about4.html">HIV治疗</a></li>
+          </ul>
+        </div>
+      </td>
+      <td><a href="jk.html">捐赠</a></td>
+
+      <td></td>
+      <td class="login">
+        <a href="login.html" title="登录">
+          <svg t="1713446597676" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            p-id="7675" width="32" height="32">
+            <path d="M512 422.4m-102.4 0a102.4 102.4 0 1 0 204.8 0 102.4 102.4 0 1 0-204.8 0Z" fill="#727272"
+              p-id="7676"></path>
+            <path
+              d="M512 64C264.96 64 64 264.96 64 512s200.96 448 448 448 448-200.96 448-448S759.04 64 512 64z m221.44 704c-28.16-96-116.48-166.4-221.44-166.4s-193.28 70.4-221.44 166.4h-52.48c23.04-102.4 102.4-183.04 204.8-208.64-49.92-25.6-83.2-76.8-83.2-136.96 0-84.48 69.12-153.6 153.6-153.6s153.6 69.12 153.6 153.6c0 60.16-34.56 111.36-83.2 136.96 101.12 25.6 180.48 106.24 204.8 208.64h-55.04z"
+              fill="#727272" p-id="7677"></path>
+            <path
+              d="M582.4 559.36c49.92-25.6 83.2-76.8 83.2-136.96 0-84.48-69.12-153.6-153.6-153.6s-153.6 69.12-153.6 153.6c0 60.16 34.56 111.36 83.2 136.96-101.12 25.6-180.48 106.24-204.8 208.64h52.48c28.16-96 116.48-166.4 221.44-166.4S704 672 732.16 768h52.48c-21.76-102.4-101.12-183.04-202.24-208.64zM409.6 422.4c0-56.32 46.08-102.4 102.4-102.4s102.4 46.08 102.4 102.4-46.08 102.4-102.4 102.4-102.4-46.08-102.4-102.4z"
+              fill="#E2E2E2" p-id="7678"></path>
+          </svg>
+        </a>
+      </td>
+    </tr>
+
+
+  </table>
+  <form class="h3">
+    <div></div>
+    <input class="in" type="text" name="value" placeholder="搜索" />
+
+    <input type="button" id="button" title="点击搜索">
+    <!-- <svg t="1712994058484" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2625" width="30" height="30"><path d="M469.333333 106.666667c200.298667 0 362.666667 162.368 362.666667 362.666666 0 86.08-29.994667 165.162667-80.085333 227.349334a20.949333 20.949333 0 0 1 10.901333 5.802666l135.765333 135.765334a21.333333 21.333333 0 0 1 0 30.165333l-30.165333 30.165333a21.333333 21.333333 0 0 1-30.165333 0l-135.765334-135.765333a21.226667 21.226667 0 0 1-5.845333-10.901333A360.96 360.96 0 0 1 469.333333 832c-200.298667 0-362.666667-162.368-362.666666-362.666667S269.034667 106.666667 469.333333 106.666667z m0 85.333333C316.16 192 192 316.16 192 469.333333s124.16 277.333333 277.333333 277.333334 277.333333-124.16 277.333334-277.333334S622.506667 192 469.333333 192z" fill="#222429" p-id="2626"></path></svg> -->
+    </input>
+  </form>
+</body>
+
+</html>

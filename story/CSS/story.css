@@ -1,0 +1,496 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+img {
+  border-radius: calc(.25rem - 1px);
+  object-fit: cover;
+}
+
+main {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+main .my-card-body {
+  padding-bottom: 0;
+}
+
+/* main里面的img */
+main .col-md-6 img {
+  border-radius: calc(.25rem - 1px);
+  height: 30rem;
+}
+
+/* 图片撑满盒子不失真 */
+main .col-md-3 .card {
+  height: 30rem;
+  object-fit: cover;
+}
+
+/* 侧边栏 */
+main .col-md-3 .list-group-item {
+  height: 3rem;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+/* swiper轮播 */
+main .swiper-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+main .swiper-slide {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.5;
+}
+
+/* 平滑的变换效果 */
+main .swiper-slide .card {
+  width: 20rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+main .swiper-slide .card img {
+  height: 15rem;
+}
+
+main .swiper-slide-active {
+  opacity: 1;
+}
+
+/* 中间的卡片放大 */
+.swiper-slide-active .card {
+  transform: scale(1.3);
+}
+
+main .swiper-button-prev,
+main .swiper-button-next {
+  position: absolute;
+  top: 50%
+}
+
+main .swiper-button-prev {
+  left: 0.5rem;
+}
+
+main .swiper-button-next {
+  right: 0.5rem;
+}
+
+main .swiper-slide a {
+  text-decoration: none;
+  color: black;
+}
+
+main .swiper-slide a p:nth-of-type(1):hover,
+main .swiper-slide a p:nth-of-type(1):active {
+  color: rgb(177, 46, 50);
+  text-decoration: underline;
+}
+
+/* 所有视频 */
+main video {
+  width: 100%;
+  border-radius: calc(.25rem - 1px)
+}
+
+/* 视频滚动框 */
+main .scrollspy-example {
+  position: relative;
+  height: 23.3rem;
+  overflow-y: auto;
+}
+
+/* 视频滚动框侧边导航 */
+main .list-group-item {
+  display: block;
+  height: 4rem;
+  line-height: 3rem;
+  border: none;
+}
+
+/* 修改文本颜色以提高可读性 */
+main .list-group-item-action.active {
+  background-color: rgb(177, 46, 50);
+  color: white;
+}
+
+main .toast {
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  /* 设置Toast的最小宽度 */
+  z-index: 1055;
+  /* 确保Toast显示在最上层 */
+  border-radius: calc(.25rem - 1px)
+}
+
+/* 小标题 */
+main .title {
+  display: block;
+  width: 10.5rem;
+  height: 2.3rem;
+  text-align: left;
+  line-height: 2.3rem;
+  letter-spacing: .5rem;
+  font-size: 1rem;
+  /* border: solid 1px rgb(177, 46, 50); */
+  text-align: center;
+  border-left: none;
+  background-color: rgb(177, 46, 50);
+  color: white;
+  border-radius: calc(.25rem - 1px);
+}
+
+main .hot {
+  margin-bottom: 1rem;
+}
+
+/* 修改所有按钮样式 */
+main .btn {
+  border: none;
+}
+
+main .btn-primary {
+  background-color: rgb(177, 46, 50);
+}
+
+main .btn-primary:hover,
+main .btn-primary:focus,
+main .btn-primary:active {
+  background-color: red;
+}
+
+main .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+main .form-control:focus {
+  box-shadow: 0 0 10px rgb(177, 46, 50);
+  border: rgb(177, 46, 50);
+}
+
+main .my-btn {
+  color: rgb(177, 46, 50);
+}
+
+main .my-btn:hover {
+  color: red;
+  text-shadow: 0 .5rem .8rem rgba(0, 0, 0, 0.5);
+  transform: translate(0, -.5rem);
+}
+
+main .my-btn:active {
+  color: red;
+}
+
+/* 模态框 */
+main .modal-body h5 {
+  text-align: left;
+}
+
+main .my-p {
+  font-size: .7rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  margin-top: -.8rem;
+  margin-left: -.5rem;
+  margin-bottom: 0.3rem;
+}
+
+
+
+.custom-nav nav {
+  width: 100vw;
+  margin: 0 auto;
+  background-color: rgb(241, 241, 241);
+  overflow-x: hidden;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 300;
+}
+
+nav a:link {
+  color: rgb(253, 235, 235);
+}
+
+nav a:visited {
+  color: rgb(252, 237, 237);
+}
+
+nav a:hover {
+  transition: color 0.3s;
+  color: rgb(255, 255, 255);
+  /* font-weight: 400; */
+  cursor: pointer;
+}
+
+nav a:active {
+  color: aliceblue;
+}
+
+nav ul,
+nav li {
+  list-style: none;
+}
+
+.custom-title {
+  width: 100vw;
+  background-color: rgb(177, 46, 50);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0px 5px #aaaaaa;
+  margin-bottom: 1px;
+}
+
+.custom-title .custom-h1 {
+  width: 70em;
+  height: 1em;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 1em;
+}
+
+.custom-title .custom-h1 td {
+  color: #a5a5a500;
+  font-weight: 100;
+}
+
+.custom-title .custom-h2 {
+  width: 70em;
+  height: 4em;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: aliceblue;
+  background-color: rgb(177, 46, 50);
+}
+
+.custom-title .custom-h2 td {
+  width: 4em;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.custom-title .custom-h2 td a {
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+  font-weight: 700;
+
+}
+
+.custom-title .custom-h2 td:hover .selec {
+  display: block;
+}
+
+.custom-title .custom-h2 td .selec {
+  width: 6em;
+  height: auto;
+  min-height: 2em;
+  position: absolute;
+  top: 3em;
+  left: 0em;
+  background-color: rgb(177, 46, 50);
+  z-index: 10;
+  display: none;
+}
+
+
+.custom-title .custom-h2 td input {
+  width: 100%;
+  height: 2.5em;
+  border: 1px rgba(187, 156, 156, 0.459) solid;
+  text-indent: 2em;
+}
+
+.custom-title .custom-h2 td input:hover {
+  border: 1px rgb(0, 0, 0) solid;
+  transition: border 0.5s;
+}
+
+.custom-title .custom-h2 .sou {
+  flex-direction: column;
+}
+
+.custom-title .custom-h2 .title_icon {
+  position: relative;
+  z-index: 10;
+}
+
+.custom-title .custom-h2 .title_icon .title_t {
+  box-shadow: 0 0px 5px #a5a5a5;
+  color: rgb(177, 46, 50);
+  background-color: rgb(255, 255, 255);
+  padding: 0.2em;
+}
+
+.custom-title .custom-h2 .title_icon .title_t p {
+  font-weight: 300;
+  font-size: xx-large;
+}
+
+.custom-title .custom-h2 .login {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-title .custom-h2 .login a {
+  position: relative;
+  height: 2em;
+}
+
+.custom-title tr td a:hover {
+  transition: all 0.2s;
+  background-color: rgb(255, 255, 255);
+  color: rgb(177, 46, 50);
+}
+
+.custom-h3 {
+  box-sizing: border-box;
+  background-color: rgb(177, 46, 50);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0.3em;
+  border-top: solid 1px #fff;
+}
+
+.custom-h3 .in {
+  width: 35rem;
+  height: 2rem;
+  border-radius: 1em;
+  text-align: center;
+  margin-right: 5em;
+  border: 1px solid rgb(177, 46, 50);
+}
+
+.custom-h3 .in:hover {
+  border: 1px rgba(0, 0, 0, 0.308) solid;
+  transition: all 0.5s;
+}
+
+.custom-h3 #button {
+  width: 2em;
+  height: 2em;
+  background-color: rgba(177, 46, 50, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1em;
+  background-image: url(/storyImages/1.svg);
+  background-size: 2em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.custom-h3 #button:hover {
+  transition: all 0.5s;
+  border: 1px solid rgb(177, 46, 50);
+}
+
+.custom-h3 #button .icon {
+  height: 2em;
+  width: 2em;
+}
+
+.custom-h3 #button .icon:hover {
+  transition: all 0.5s;
+  color: aliceblue;
+}
+
+
+.end {
+
+  width: 70em;
+  height: 13em;
+  margin: auto;
+  /* box-shadow: 0 0px 5px #aaaaaa; */
+  background-color: rgb(177, 46, 50);
+  position: relative;
+
+}
+
+.end .left {
+  width: 22em;
+  height: auto;
+  position: absolute;
+  left: 0%;
+  top: 2em;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.end .right {
+  width: 45em;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  top: 2em;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.end .bottom {
+  width: 70em;
+  height: 3em;
+  position: absolute;
+  bottom: 0.5em;
+  border-top: solid 1px #a5a5a5;
+  background-color: #a5a5a500;
+  /* padding: 0.5em; */
+}
+
+.end ul li {
+  width: 100%;
+  margin: auto;
+}
+
+.end ul li h2 {
+  font-size: large;
+}
+
+.end ul li a {
+  height: 1.4em;
+  font-size: smaller;
+  margin-left: 2em;
+  color: #fff;
+  font-size: 600;
+  display: inline-flex;
+
+}
